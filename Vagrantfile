@@ -9,7 +9,7 @@ hadoopver = ENV['hadoop_version'] || "2.6.3"
 sparkver = ENV['spark_version'] || "1.5.2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "ubuntu/wily64"
+  config.vm.box = "ubuntu/trusty64"
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = 4096
